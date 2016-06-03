@@ -12,5 +12,11 @@
   "require": {
     "lag/adminbundle": "dev-dev",
     "sidus/eav-model-bundle": "dev-symfony3"
-  }
+  },
+  "autoload": {
+    "psr-0": {
+      "LAG\\AdminBundle": ""
+    }
+  },
+  "target-dir": "LAG/AdminEAVBridgeBundle"
 }
