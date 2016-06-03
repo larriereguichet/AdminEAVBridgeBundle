@@ -1,0 +1,16 @@
+{
+  "name": "lag/admin-eav-bridge-bundle",
+  "description": "Bridge between LAG\\AdminBundle and Sidus\\EAVModelBundle",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "johnkrovitch",
+      "email": "arnaudfrezet@gmail.com"
+    }
+  ],
+  "require": {
+    "lag/adminbundle": "dev-dev",
+    "sidus/eav-model-bundle": "dev-symfony3"
+  }
+}
