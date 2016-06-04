@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/larriereguichet/AdminEAVBridgeBundle.svg?branch=master)
+![Build Status](https://travis-ci.org/larriereguichet/AdminEAVBridgeBundle.svg?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/larriereguichet/AdminEAVBridgeBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/larriereguichet/AdminEAVBridgeBundle/?branch=master)
-
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/edbd6e5c-066a-46a3-a453-b4ac553a0a55/big.png)](https://insight.sensiolabs.com/projects/edbd6e5c-066a-46a3-a453-b4ac553a0a55)
 
 # AdminEAVBridgeBundle
 Bridge between LAG/AdminBundle and Sidius/EAVModelBundle
