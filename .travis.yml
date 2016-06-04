@@ -6,8 +6,11 @@ php:
     - 7.0
     - hhvm
 
+before_script: echo 'memory_limit = -1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+
+
 install:
-    - composer install
+    - composer install --prefer-source
 
 script:
   - phpunit --coverage-text --coverage-clover=coverage.clover

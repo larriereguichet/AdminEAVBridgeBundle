@@ -39,7 +39,7 @@ class AdminEAVFamilyMapper
     public function getAdmin($class)
     {
         if (!array_key_exists($class, $this->adminMapping)) {
-            throw new Exception($class . ' not found in Admin EAV bridge mapping. Check your configuration');
+            throw new Exception($class.' not found in Admin EAV bridge mapping. Check your configuration');
         }
 
         return $this->adminMapping[$class];
@@ -53,7 +53,7 @@ class AdminEAVFamilyMapper
     public function getFamily($class)
     {
         if (!array_key_exists($class, $this->familyMapping)) {
-            throw new Exception($class . ' not found in Admin EAV bridge mapping. Check your configuration');
+            throw new Exception($class.' not found in Admin EAV bridge mapping. Check your configuration');
         }
 
         return $this->familyMapping[$class];
