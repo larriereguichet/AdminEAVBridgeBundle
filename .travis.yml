@@ -10,7 +10,7 @@ before_script:
     - phpenv config-rm xdebug.ini
 
 install:
-    - composer self-update
+    - composer self-update --rollback
     - composer install --prefer-source
 
 script:
