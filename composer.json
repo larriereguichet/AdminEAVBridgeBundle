@@ -18,5 +18,11 @@
       "LAG\\AdminEAVBridgeBundle": ""
     }
   },
-  "target-dir": "LAG/AdminEAVBridgeBundle"
+  "target-dir": "LAG/AdminEAVBridgeBundle",
+  "config": {
+    "bin-dir": "bin"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.4"
+  }
 }
