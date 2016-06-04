@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-0": {
-      "LAG\\AdminBundle": ""
+      "LAG\\AdminEAVBridgeBundle": ""
     }
   },
   "target-dir": "LAG/AdminEAVBridgeBundle"
