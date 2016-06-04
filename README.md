@@ -1,5 +1,5 @@
-![Build Status](https://travis-ci.org/larriereguichet/AdminEAVBridgeBundle.svg?branch=master)
-
+[![Build Status](https://travis-ci.org/larriereguichet/AdminEAVBridgeBundle.svg?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/larriereguichet/AdminEAVBridgeBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/larriereguichet/AdminEAVBridgeBundle/?branch=master)
 
 
 # AdminEAVBridgeBundle
@@ -15,21 +15,17 @@ of the doctrine's entity manager.
 
 ## Installation
 ```
-
-    composer require lag/admin-eav-bridge-bundle
-    
+    composer require lag/admin-eav-bridge-bundle    
 ```
 
 
 ## Configuration
-```
+```yml
 
     lag_admin_eav_bridge:
         entity: BlueBear\SWBundle\Entity\MyLittleTaunTaunEAVEntity
         mapping:
             # The key is an Admin name. The value is a Family name
             fireman: FireMan
-
-
 
 ```
