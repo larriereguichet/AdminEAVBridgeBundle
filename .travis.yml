@@ -6,11 +6,10 @@ php:
     - 7.0
     - hhvm
 
-before_script:
-    - phpenv config-rm xdebug.ini
+before_script: echo 'memory_limit = -1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+
 
 install:
-    - composer self-update --rollback
     - composer install --prefer-source
 
 script:
