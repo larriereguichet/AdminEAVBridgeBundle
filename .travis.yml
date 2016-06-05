@@ -15,7 +15,7 @@ install:
     #- composer install --prefer-source
 before_script:
     - rm -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
-    - flags=""
+    - composer self-update
     - composer install --profile --prefer-source
     #- git config --global user.name travis-ci
     #- git config --global user.email travis@example.com
