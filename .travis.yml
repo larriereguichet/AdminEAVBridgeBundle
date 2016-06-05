@@ -11,8 +11,15 @@ php:
 
 install:
     #- php -d memory_limit=-1 /usr/local/bin/composer update --verbose --profile
-    - composer install --prefer-source --no-interaction --dev --profile
+    ##- composer install --prefer-source --no-interaction --dev --profile
     #- composer install --prefer-source
+before_script:
+    - rm -f ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/xdebug.ini
+    - flags=""
+    - composer install --profile --prefer-source
+    #- git config --global user.name travis-ci
+    #- git config --global user.email travis@example.com
+
 
 script:
   - phpunit --coverage-text --coverage-clover=coverage.clover
