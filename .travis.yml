@@ -6,11 +6,12 @@ php:
     - 7.0
     - hhvm
 
-before_script: echo 'memory_limit = -1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+before_install: echo 'memory_limit = -1' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
 
 
 install:
-    - php -d memory_limit=-1 /usr/local/bin/composer update --verbose --profile
+    #- php -d memory_limit=-1 /usr/local/bin/composer update --verbose --profile
+    - composer install --prefer-source --no-interaction --dev
     #- composer install --prefer-source
 
 script:
